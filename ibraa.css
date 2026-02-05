@@ -193,8 +193,6 @@ body {
 .btn-main:hover {
     background: #e6c800;
 }
-
-/* --- Benefits Section --- */
 .benefits-section {
     background: var(--dark-grey);
     color: white;
