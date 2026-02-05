@@ -1,0 +1,103 @@
+:root {
+    --cell-bg: #fdfae6; /* Couleur beige clair de l'image */
+    --text-dark: #1a1a1a;
+}
+
+body  {
+margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #111;
+}
+
+section {
+    position: relative;
+    min-height: 100vh;
+    padding: 60px 0;
+    background: url('https://images.unsplash.com/photo-1593079831268-3381b0db4a77?q=80&w=2069') no-repeat center center/cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.container {
+    position: relative;
+    width: 95%;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.logo {
+    font-size: 34px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+span { color: #eb6218f8; } 
+
+.lhidr {
+    text-align: center;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.lhidr h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 44px;
+}
+
+.lhidr h1 span { color: #fff; }
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+.tablo {
+    width: 100%;
+    border-collapse: separate ;
+    border-spacing: 10px;
+}
+
+.tablo th {
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.tablo td {
+    background: var(--cell-bg);
+    height: 55px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    transition: transform 0.3s ease, background 0.3s ease;
+    min-width: 140px;
+}
+
+.lw9t {
+    background: var(--brand-red) !important;
+    color: white ;
+    font-family: 'Oswald', sans-serif;
+}
+
+.class-cell:hover {
+    transform: scale(1.1);
+    background: #d96d07 !important;
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 40px;
+    text-align: center;
+    color: white;
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+/* Responsive mobile */
+@media (max-width: 768px) {
+    .lhidr h1 { font-size: 1.8rem; }
+    .tablo th { padding: 8px; font-size: 0.8rem; }
+}
