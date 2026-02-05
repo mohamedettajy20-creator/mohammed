@@ -53,6 +53,7 @@
         .lista li { margin-bottom: 15px; font-size: 18px; }
         .lista li:before { content: "✓"; color: #eb6218f8; font-weight: bold; margin-right: 10px; }
 
+
             @media screen and (max-width: 800px) {
             .carte, .pourquoi-texte, .pourquoi-image { 
                 width: 100%; 
@@ -61,3 +62,4 @@
             }
             .titre { font-size: 20px; }
         }
+
