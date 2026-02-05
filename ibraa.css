@@ -1,242 +1,63 @@
-:root {
-    --primary-orange:#eb6218f8;
-    --dark-grey: #000000;
-    --light-grey: #f4f4f4;
-    --text-color: #000000;
-}
+ body {
+            margin: 0;
+            font-family: 'Arial Narrow', Arial, sans-serif;
+            background-color: #ffffff;
+            color: #000000;
+        }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+        .header {
+            background-color: #000000;
+            padding: 15px 5%;
+            color: white;
+            overflow: hidden;
+        }
+        .logo { float: left; font-size: 24px; font-weight: bold; text-transform: uppercase; }
+        .logo span { color: #eb6218f8; }
+        .btn-inscription { float: right; background: #eb6218f8; padding: 8px 15px; color: black; font-weight: bold; text-decoration: none; border-radius: 4px; }
 
-body {
-    font-family: 'Roboto', sans-serif;
-    color: var(--text-color);
-    line-height: 1.6;
-    background-color: #fff;
-    
-}
+        .section-prix { padding: 60px 5%; text-align: center; }
+        .titre-principal { font-size: 35px; margin-bottom: 40px; text-transform: uppercase; }
+        
+        .conteneur-cartes { overflow: hidden; max-width: 1200px; margin: 0 auto; }
+        .carte {
+            float: left;
+            width: 30%;
+            margin: 1.5%;
+            border: 1px solid #ddd;
+            border-radius: 15px;
+            padding: 30px 0;
+            background: white;
+            transition: 0.3s;
+        }
+        .carte:hover { margin-top: -10px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+        .entete-orange { background: #eb6218f8; margin: -30px 0 20px 0; padding: 15px; font-weight: bold; border-radius: 13px 13px 0 0; }
+        
+        .prix { font-size: 45px; font-weight: bold; font-style: italic; }
+        .badge-promo { background: #eb6218f8; padding: 5px; font-weight: bold; display: inline-block; margin: 10px 0; border-radius: 5px; }
+        .btn { background: #eb6218f8; border: none; width: 80%; padding: 15px; font-weight: bold; cursor: pointer; margin-top: 20px; border-radius: 5px; }
 
-.container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
+        .section-pourquoi {
+            background: #1a1a1a url("https://www.placesleisure.org/media/y1klzmlw/centre-gallery-images-wolves-gym-5-1.png?width=1200&height=600&v=1db29e58a8d5790") no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 80px 5%;
+            overflow: hidden;
+            position: relative;
+        }
+        .voile { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); }
+        
+        .contenu-pourquoi { position: relative; z-index: 2; width: 50%; float: left; }
+        .contenu-pourquoi h2 { font-size: 30px; margin-bottom: 30px; }
+        
+        .lista { list-style: none; padding: 0; }
+        .lista li { margin-bottom: 15px; font-size: 18px; }
+        .lista li:before { content: "✓"; color: #eb6218f8; font-weight: bold; margin-right: 10px; }
 
-.navbar {
-    background: var(--dark-grey);
-    padding: 15px 0;
-    color: white;
-    position: sticky;
-    z-index: 1000;
-    
-}
-
-.navbar .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-}
-
-.logo {
-    font-family: 'Oswald', sans-serif;
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.logo span { color: var(--primary-orange); }
-
-.nav-links {
-    display: flex;
-    list-style: none;
-}
-
-.nav-links li a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
-    font-size: 0.9rem;
-    transition: color 0.3s;
-}
-
-.nav-links li a:hover, .nav-links li a.active {
-    color: var(--primary-orange);
-}
-
-.btn-subscribe {
-    background: var(--primary-orange);
-    padding: 8px 15px;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    border-radius: 4px;
-    transition: transform 0.2s;
-}
-
-.btn-subscribe:hover { transform: scale(1.12); }
-.hero-text {
-    text-align: center;
-    padding: 60px 20px;
-}
-
-.hero-text h1 {
-    font-family: 'Oswald', sans-serif;
-    font-size: 2.5rem;
-    margin-bottom: 15px;
-}
-.tlata-containerat {
-    margin-bottom: 80px;
-}
-
-.card {
-    background: white;
-    border-radius: 15px;
-    padding: 40px 30px;
-    text-align: center;
-
-    position: relative;
-    transition: transform 0.3s ease;
-    border: 1px solid #eee;
-}
-
-.card:hover {
-    transform: translateY(-10px);
-}
-
-.card.featured {
-    border: 2px solid var(--primary-yellow);
-}
-
-.badge {
-    position: absolute;
-    top: -12px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: white;
-    padding: 2px 15px;
-    font-size: 0.7rem;
-    font-weight: bold;
-    border: 1px solid #ddd;
-}
-
-.card-header {
-    font-family: 'Oswald', sans-serif;
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-    color: #444;
-}
-
-.card.featured .card-header {
-    background: var(--primary-yellow);
-    margin: -40px -30px 30px -30px;
-    padding: 15px;
-    border-radius: 12px 12px 0 0;
-}
-
-.price {
-    font-family: 'Oswald', sans-serif;
-    font-size: 3rem;
-    font-style: italic;
-}
-
-.price span { font-size: 1rem; font-style: normal; }
-
-.promo-box {
-    background: var(--primary-orange);
-    display: inline-block;
-    padding: 5px 10px;
-    margin: 10px 0;
-    font-weight: bold;
-}
-
-.fees {
-    color: #999;
-    font-size: 0.85rem;
-    margin: 15px 0;
-}
-
-.options {
-    text-align: left;
-    margin: 20px 0;
-    border-top: 1px solid #eee;
-    padding-top: 20px;
-}
-
-.options ul {
-    list-style: none;
-    margin-top: 10px;
-}
-
-.options ul li::before {
-    content: "•";
-    color: var(--primary-orange);
-    font-weight: bold;
-    margin-right: 10px;
-}
-
-.btn-main {
-    width: 100%;
-    background: var(--primary-orange);
-    border: none;
-    padding: 15px;
-    font-family: 'Oswald', sans-serif;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 8px;
-    transition: background 0.3s;
-}
-
-.btn-main:hover {
-    background: #e6c800;
-}
-
-/* --- Benefits Section --- */
-.benefits-section {
-    background: var(--dark-grey);
-    color: white;
-    padding: 80px 0;
-}
-
-.benefits-grid {
-    display: grid;
-    grid-template-columns: 1fr 1.2fr;
-    gap: 40px;
-    align-items: center;
-}
-
-.benefits-content h2 {
-    font-family: 'Oswald', sans-serif;
-    font-size: 2rem;
-    margin-bottom: 30px;
-}
-
-.check-list {
-    list-style: none;
-}
-
-.check-list li {
-    margin-bottom: 12px;
-    display: flex;
-    align-items: center;
-}
-
-.check-list li::before {
-    content: '✓';
-    color: #4caf50;
-    font-weight: bold;
-    margin-right: 15px;
-}
-
-.image img{
-    width: 100%;
-    border-radius: 10px;
-}
-
-@media (max-width: 768px) {
-    .nav-links { display: none; }
-    .hero-text h1 { font-size: 1.8rem; }
-}
+            @media screen and (max-width: 800px) {
+            .carte, .pourquoi-texte, .pourquoi-image { 
+                width: 100%; 
+                float: none; 
+                margin: 10px 0; 
+            }
+            .titre { font-size: 20px; }
+        }
