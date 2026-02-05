@@ -1,5 +1,5 @@
 :root {
-    --cell-bg: #fdfae6; /* Couleur beige clair de l'image */
+    --cell-bg: #fdfae6; 
     --text-dark: #1a1a1a;
 }
 
@@ -77,14 +77,14 @@ span { color: #eb6218f8; }
 }
 
 .lw9t {
-    background: var(--brand-red) !important;
+    background-color: var(--ombre-ss) !important;
     color: white ;
     font-family: 'Oswald', sans-serif;
 }
 
 .class-cell:hover {
     transform: scale(1.1);
-    background: #d96d07 !important;
+    background: #d96d07 ;
     cursor: pointer;
 }
 
@@ -95,8 +95,6 @@ footer {
     font-size: 17px;
     letter-spacing: 1px;
 }
-
-/* Responsive mobile */
 @media (max-width: 768px) {
     .lhidr h1 { font-size: 1.8rem; }
     .tablo th { padding: 8px; font-size: 0.8rem; }
