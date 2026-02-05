@@ -1,12 +1,553 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="ettajysty.css">
-</head>
-<body>
-    <h1>hi moo</h1>
-</body>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FitCenter — Centre Sportif</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <meta
+      name="description"
+      content="Site d'un centre sportif / club de fitness — activités, coaches, planning, tarifs, contact."
+    />
+  </head>
+  <link rel="stylesheet" href="ettajysty.css" />
+  <body>
+    <div class="container">
+      <header>
+        <div class="nav">
+          <div class="brand">
+            <div class="logo">MB</div>
+            <div>
+              <div style="font-weight: 800">MBCenter</div>
+              <div style="font-size: 12px; color: var(--muted)">
+                Centre sportif & Club de fitness
+              </div>
+            </div>
+          </div>
+          <nav>
+            <button
+              class="menu-toggle"
+              aria-label="menu"
+              onclick="toggleMenu()"
+            >
+              ☰
+            </button>
+            <ul id="navlist">
+              <li><a href="#accueil">Accueil</a></li>
+              <li><a href="#activites">Activités</a></li>
+              <li><a href="#equipe">Équipe</a></li>
+              <li><a href="#planning">Planning</a></li>
+              <li><a href="#tarifs">Tarifs</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a class="cta" href="#contact">S'inscrire</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <section id="accueil" class="hero section">
+        <div class="left">
+          <h1>
+            Atteignez vos objectifs. Devenez plus fort, plus rapide, plus
+            heureux.
+          </h1>
+          <p>
+            Programme complet : musculation, cardio, yoga, boxe — coaches
+            certifiés, planning flexible et tarifs adaptés.
+          </p>
+          <div class="actions">
+            <a class="cta" href="#tarifs">Voir les tarifs</a>
+            <a
+              href="#activites"
+              style="
+                padding: 8px 12px;
+                border-radius: 8px;
+                background: #fff;
+                display: inline-block;
+                text-decoration: none;
+                font-weight: 700;
+              "
+              >Nos activités</a
+            >
+          </div>
+          <div style="margin-top: 18px; display: flex; gap: 12px">
+            <div
+              class="card"
+              style="display: flex; gap: 12px; align-items: center"
+            >
+              <div
+                style="
+                  width: 48px;
+                  height: 48px;
+                  background: linear-gradient(135deg, #5eead4, #06b6d4);
+                  border-radius: 10px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  color: white;
+                  font-weight: 700;
+                "
+              >
+                ✓
+              </div>
+              <div>
+                <div style="font-weight: 700">Coachs experts</div>
+                <div style="font-size: 13px; color: var(--muted)">
+                  Suivi personnalisé
+                </div>
+              </div>
+            </div>
+            <div
+              class="card"
+              style="display: flex; gap: 12px; align-items: center"
+            >
+              <div
+                class="humm"
+              >
+                🏋
+              </div>
+              <div>
+                <div style="font-weight: 700">Équipements modernes</div>
+                <div style="font-size: 13px; color: var(--muted)">
+                  Machines et salles
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <img
+            src="home.jpg"
+            alt="Hero fitness image"
+          />
+        </div>
+      </section>
+
+      
+      <section id="activites" class="section">
+        <div
+          class="tzk"
+        >
+          <h2>Activités</h2>
+          <p style="color: var(--muted); margin: 0">
+            Musculation · Cardio · Yoga · Boxe · Cours collectifs
+          </p>
+        </div>
+        <div class="grid">
+          <article class="activity">
+            <img
+              src="muc.jpg"
+              alt="Musculation"
+            />
+            <h3>Musculation</h3>
+            <p>Programmes de force et prise de masse avec plan personnalisé.</p>
+               <dialog  id="how">
+              <p>
+              <h4>🏋‍♂ Musculation </h4>
+
+Au sein de notre club, les séances de musculation sont conçues pour développer la force,
+ améliorer la silhouette et renforcer l’ensemble du corps de manière saine et progressive. 
+ Chaque séance débute par un échauffement complet afin de préparer les muscles et prévenir les blessures.
+  Les adhérents travaillent ensuite sur des machines modernes et avec des charges libres, 
+  tout en étant encadrés par des coachs qualifiés qui veillent à la bonne exécution des exercices.
+   Les programmes sont adaptés à tous les niveaux, que l’objectif soit la prise de masse musculaire,
+    la perte de graisse ou l’amélioration de la condition physique générale,
+     le tout dans un environnement motivant et sécurisé.
+
+              </p>
+              <button class="gavi" onclick="how.close()">❌</button>
+            </dialog>
+             
+            <div id="container">
+              <button class="learn-more-btn" onclick="how.showModal()">
+             <span class="circle" aria-hidden="true">
+             <span class="icon arrow"></span>
+             </span>
+            <span class="button-text">Learn More</span>
+         </button>
+           </div>
+          </article>
+          <article class="activity">
+            <img
+              src="card.jpg"
+              alt="Cardio"
+            />
+            <h3>Cardio</h3>
+            <p>
+              Séances HIIT, tapis et vélo pour brûler <br> les graisses rapidement.
+            </p>
+             <dialog  id="ow">
+              <p>
+              <h4>🏃‍♀ Cardio </h4>
+
+Les séances de cardio sont spécialement élaborées pour améliorer l’endurance,
+ renforcer le système cardiovasculaire et brûler efficacement les calories. 
+ Elles combinent différents exercices dynamiques tels que la course, le vélo,
+  les exercices au poids du corps et des mouvements à haute intensité. 
+  Chaque séance est rythmée et stimulante, 
+  favorisant l’énergie et la motivation tout au long de l’entraînement.
+   L’intensité est adaptée au niveau de chacun, 
+   permettant une progression progressive dans une ambiance conviviale et motivante, 
+   idéale pour retrouver forme, vitalité et bien-être.
+
+              </p>
+              <button class="gav" onclick="ow.close()">❌</button> 
+            </dialog>
+            
+            <div id="container" >
+              <button class="learn-more-btn" onclick="ow.showModal()">
+             <span class="circle" aria-hidden="true">
+             <span class="icon arrow"></span>
+             </span>
+            <span class="button-text">Learn More</span>
+         </button>
+           </div>
+          </article>
+          <article class="activity">
+            <img src="yog.jpg" alt="Yoga" />
+            <h3>Yoga</h3>
+            <p>Flow & relaxation — récupération <br> et mobilité.</p>
+             <dialog  id="hob">
+              <p>
+                <h4>🧘‍♀ Yoga </h4>
+
+Les cours de yoga offrent un moment de détente et de recentrage, essentiel pour l’équilibre entre le corps et l’esprit.
+ Les séances sont axées sur des postures variées, des exercices de respiration et des techniques de relaxation qui améliorent la souplesse, 
+ la posture et la concentration. Le yoga permet également de réduire le stress et les tensions accumulées au quotidien.
+  Accessible à tous les âges et à tous les niveaux, chaque séance se déroule dans une atmosphère calme et apaisante, 
+  favorisant le bien-être, la sérénité et l’harmonie intérieure.
+
+
+              </p>
+              <button class="gvi" onclick="hob.close()">❌</button> 
+            </dialog>
+            <div id="container">
+              <button class="learn-more-btn" onclick="hob.showModal()">
+             <span class="circle" aria-hidden="true">
+             <span class="icon arrow"></span>
+             </span>
+            <span class="button-text">Learn More</span>
+         </button>
+           </div>
+          </article>
+          <article class="activity">
+            <img src="bo.jpg" alt="Boxe" />
+            <h3>Boxe</h3>
+            <p>Technique, cardio et sparring encadré par <br> des coaches pro.</p>
+             <dialog   id="si">
+              <p>
+                <h4>🥊 Boxe </h4>
+
+Les séances de boxe proposées dans notre club allient intensité, 
+discipline et performance. Elles permettent d’apprendre les techniques de base et avancées de la boxe,
+ telles que les déplacements, les esquives, les enchaînements de coups et le travail de défense. 
+ En plus de l’aspect technique, les entraînements incluent une préparation physique complète visant à améliorer la vitesse, la coordination, la puissance et l’endurance. Encadrées par des coachs expérimentés, ces séances se déroulent dans un cadre sécurisé et dynamique, idéal pour se défouler, gagner en confiance en soi et développer un esprit combatif.
+
+              </p>
+              <button class="gai" onclick="si.close()">❌</button> 
+            </dialog>
+           <div id="container">
+              <button  class="learn-more-btn" onclick="si.showModal()">
+             <span class="circle" aria-hidden="true">
+             <span class="icon arrow"></span>
+             </span>
+            <span class="button-text">Learn More</span>
+         </button>
+           </div>
+          </article>
+        </div>
+      </section>
+
+      
+      <section id="equipe" class="section">
+        <div
+         class="frt"
+           
+        >
+          <h2>Équipe</h2>
+          <p style="color: var(--muted); margin: 0">Rencontrez nos coaches</p>
+        </div>
+        <div class="coaches">
+          <div class="coach">
+            <img
+              src="WhatsApp Image 2025-11-24 à 17.17.23_1def1c27.jpg"
+              alt="Coach 1"
+            />
+            <h4>Mohammed Et-tajy</h4>
+            <p>Coach musculation — Prépa physique & hypertrophie</p>
+          </div>
+          <div class="coach">
+            <img
+              src="you.jpg"
+              alt="Coach 2"
+            />
+            <h4>Shalid</h4>
+            <p>Coach Yoga & mobilité — Bien-être</p>
+          </div>
+          <div class="coach">
+            <img
+              src="omar khaled.jpg"
+              alt="Coach 3"
+            />
+            <h4>Omar Khalid</h4>
+            <p>Coach Boxe — Technique & cardio</p>
+          </div>
+        </div>
+      </section>
+
+      
+      <section id="planning" class="section">
+        <div
+          class="lok"
+        >
+          <h2>Planning des cours</h2>
+          <p style="color: var(--muted); margin: 0">Horaires hebdomadaires</p>
+        </div>
+        <div class="table-wrap">
+          <table aria-label="planning des cours">
+            <thead>
+              <tr>
+                <th>Heure / Jour</th>
+                <th>Lundi</th>
+                <th>Mardi</th>
+                <th>Mercredi</th>
+                <th>Jeudi</th>
+                <th>Vendredi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>08:00 - 09:00</td>
+                <td>Yoga</td>
+                <td>Musculation (débutant)</td>
+                <td>Boxe</td>
+                <td>Cardio HIIT</td>
+                <td>Musculation (avancé)</td>
+              </tr>
+              <tr>
+                <td>12:00 - 13:00</td>
+                <td>Cardio</td>
+                <td>Yoga</td>
+                <td>Musculation</td>
+                <td>Boxe</td>
+                <td>Stretch & mobilité</td>
+              </tr>
+              <tr>
+                <td>18:00 - 19:00</td>
+                <td>Musculation</td>
+                <td>Boxe</td>
+                <td>Cardio HIIT</td>
+                <td>Yoga</td>
+                <td>Open Gym</td>
+              </tr>
+              <tr>
+                <td>19:30 - 20:30</td>
+                <td>Boxe</td>
+                <td>Musculation</td>
+                <td>Yoga</td>
+                <td>Cardio</td>
+                <td>Boxe</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      
+      <section id="tarifs" class="section">
+        <div
+          class="ds"
+        >
+          <h2>Tarifs & Abonnements</h2>
+          <p style="color: var(--muted); margin: 0">
+            Choisissez un plan qui vous convient
+          </p>
+        </div>
+        <div class="prices">
+          <div class="price">
+            <h3>Basic</h3>
+            <div class="amount">120 MAD / mois</div>
+            <ul>
+              <li>Accès salle libre</li>
+              <li>Horaires limités</li>
+              <li>Pas de coach inclus</li>
+            </ul>
+</dialog>
+<details class="choose-box">
+  <summary class="choose-btn">Choisir</summary>
+  <form class="choose-form">
+    <input type="text" placeholder="Nom complet" required>
+    <input type="email" placeholder="Email" required>
+    <button>Envoyer</button>
+          </div>
+          <div class="price">
+            <h3>Standard</h3>
+            <div class="amount">220 MAD / mois</div>
+            <ul>
+              <li>Accès illimité</li>
+              <li>Accès à tous les cours</li>
+              <li>1 séance bilan offerte</li>
+            </ul>
+<details class="choose-box">
+  <summary class="choose-btn">Choisir</summary>
+  <form class="choose-form">
+    <input id="dan" type="text" placeholder="Nom complet" required>
+    <input id="da" type="email" placeholder="Email" required>
+    <button id="nad">Envoyer</button>
+          </div>
+          <div class="price">
+            <h3>Premium</h3>
+            <div class="amount">420 MAD / mois</div>
+            <ul>
+              <li>Séances coaching illimitées</li>
+              <li>Programme nutrition</li>
+              <li>Accès VIP</li>
+            </ul>
+             
+</dialog>
+<details class="choose-box">
+  <summary class="choose-btn">Choisir</summary>
+  <form class="choose-form">
+    <input id="frii" type="text" placeholder="Nom complet" required>
+    <input id="froo" type="email" placeholder="Email" required>
+    <button id="say">Envoyer</button>
+      </div>
+  </form>
+</details>
+
+      </div>
+      </div>
+      </section>
+    </div>
+
+     
+      <section id="contact" class="section">
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 18px;
+          "
+        >
+          <h2>Contact</h2>
+          <p style="color: var(--muted); margin: 0">
+            Passez nous un message ou inscrivez-vous
+          </p>
+        </div>
+        <div class="contact">
+          <div class="form">
+            <form id="contactForm" onsubmit="submitForm(event)">
+              <label for="name">Nom</label>
+              <input id="name" name="name" required />
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required />
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+              <button type="submit">Envoyer</button>
+              <div
+                id="formMsg"
+                style="margin-top: 10px; color: var(--muted)"
+              ></div>
+            </form>
+          </div>
+          <div
+            class="fomeee"
+          >
+            <h4>Infos</h4>
+            <p class="info">
+              Adresse: 24 Rue du Sport, Casablanca
+            </p>
+            <p class="info">
+              Téléphone: +212 6 12 34 56 78
+            </p>
+            <p class="info">
+              Email: contact@fitcenter.ma
+            </p>
+            <div style="margin-top: 12px">
+              <iframe
+                title="map"
+                src="https://maps.google.com/maps?q=casablanca&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                class="mape"
+                
+              
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+    </div>
+
+    <script>
+      function toggleMenu() {
+        const ul = document.getElementById("navlist");
+        ul.classList.toggle("show");
+      }
+     
+      document.querySelectorAll('a[href^="#"]').forEach((a) => {
+        a.addEventListener("click", function (e) {
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: "smooth", block: "start" });
+            
+            document.getElementById("navlist").classList.remove("show");
+          }
+        });
+      });
+
+      function submitForm(e) {
+        e.preventDefault();
+        const name = document.getElementById("name").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const msg = document.getElementById("message").value.trim();
+        const formMsg = document.getElementById("formMsg");
+        if (!name || !email || !msg) {
+          formMsg.textContent = "Veuillez remplir tous les champs.";
+          return;
+        }
+        
+        formMsg.style.color = "green";
+        formMsg.textContent = "Merci ! Votre message a été envoyé.";
+        document.getElementById("contactForm").reset();
+      }
+ 
+
+    </script>
+    <div class="social-container">
+    <a href="#" class="twitter" target="_blank">
+      <i class="fa-brands fa-twitter"></i>
+      <span>Twitter</span>
+    </a><a href="https://www.instagram.com/mohammed_ettajy?igsh=MThucjRqdXJ2anFlag==" class="instagram" target="_blank">
+  <i class="fa-brands fa-instagram"></i>
+  <span>Instagram</span>
+</a>
+
+<a href="#" class="github" target="_blank">
+  <i class="fa-brands fa-github"></i>
+  <span>GitHub</span>
+</a>
+
+<a href="#" class="telegram" target="_blank">
+  <i class="fa-brands fa-telegram"></i>
+  <span>Telegram</span>
+</a>
+  </div>
+  <footer>
+        <div class="ream">
+          © 2025 FitCenter — Tous droits réservés •
+          <a href="#" class="sotr" 
+            >Politique de confidentialité</a
+          >
+        </div>
+       
+      </footer>
+  </body>
 </html>
